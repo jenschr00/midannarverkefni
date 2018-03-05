@@ -1,5 +1,5 @@
 from bottle import *
-import urllib.request, json
+import urllib.request, json, os
 with urllib.request.urlopen("http://apis.is/petrol") as url:
     data = json.loads(url.read().decode())
 @route('/Myndir/<filename>')
@@ -21,4 +21,4 @@ def allt2(name):
 def villa(error):
     return("vefsíða ekki til")
 
-run(host='localhost', port=8080)
+run(host='0.0.0.0', port=os.environ.get('PORT'))
