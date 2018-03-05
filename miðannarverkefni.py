@@ -1,5 +1,6 @@
 from bottle import *
-import urllib.request, json, os
+import urllib.request, json
+import os
 with urllib.request.urlopen("http://apis.is/petrol") as url:
     data = json.loads(url.read().decode())
 @route('/Myndir/<filename>')
