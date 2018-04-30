@@ -47,6 +47,8 @@
 		<div class="box">
 			<h2 class="as">Fyrirtæki</h2>
 			<h2 class="asd">Staður</h2>
+			<h2 class="asdf">Bensín</h2>
+			<h2 class="asdfg">Dísel</h2>
 			<h3 class="haegri"><a class="as" href="/allt2/{{x['name']}}">{{x["company"]}}</a><p> <p> <a class="asd">{{x["name"]}}</a><p> <p><a class="asdf">{{x["bensin95"]}}<p> <p><a class="asdfg">{{x["diesel"]}}</h3>
 		</div>
 	%end			
