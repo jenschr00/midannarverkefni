@@ -24,12 +24,6 @@
 		margin-left: 250px;
 		text-align: center;
 	}
-	.as{
-		float:left;
-	}
-	.asd{
-		margin-left:250px;
-	}
 	.box{
 		font-family: arial, sans-serif;
    		border-collapse: collapse;
@@ -38,8 +32,9 @@
     	border-collapse: separate;
     	border-spacing: 2px;
     	border-color: black;
-}
 
+}
+	
 	}
 </style>
 	%for x in data["results"]:
