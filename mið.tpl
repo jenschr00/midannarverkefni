@@ -26,7 +26,7 @@
 	}
 	img{height:55px;width:55px;}
 </style>
-	<h1>Söluaðilar eldsneytis á Íslandi</h1>
+	<h1>Bensínstöðvar á íslandi</h1>
 	<div class="image">
 		<img src="/Myndir/AO.png">
 		<img src="/Myndir/Costco.png">
@@ -44,8 +44,14 @@
         %end
     % end
 	%for x in listi:
-    	<h3><a href="/allt/{{x}}">{{x}}</h3>
+    <h3><a href="/allt/{{x}}">{{x}}</a></h3>
     %end
+    %for x in data['timestampPriceChanges']:
+        %print(x)
+    <footer>
+        <h4>{{x}}</h4>
+    </footer>
+    
     
 
 
