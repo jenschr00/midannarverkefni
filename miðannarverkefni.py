@@ -1,4 +1,5 @@
 from bottle import *
+import os
 import urllib.request, json
 with urllib.request.urlopen("http://apis.is/petrol") as url:
     data = json.loads(url.read().decode())
@@ -21,4 +22,4 @@ def allt2(company,name):
 def villa(error):
     return("vefsíða ekki til")
 
-run(host='localhost', port=8080)
+run(host='0.0.0.0',port=os.environ.get('PORT'))
